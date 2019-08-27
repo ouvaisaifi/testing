@@ -1,0 +1,56 @@
+import java.util.Scanner;
+import java.io.*;
+import java.io.FileNotFoundException;
+public class frequency
+{
+public static void main(String args[])throws FileNotFoundException
+{
+File file = new File("/home/niit/Desktop/text.txt");
+String s="";
+int l,i,c=0;
+Scanner sc = new Scanner(file);
+while(sc.hasNextLine())
+{
+s=sc.nextLine+" ";
+l=s.length();
+for(i=0;i<l;i++)
+{
+if(s.charAt(i)==' ')
+c++;
+}
+}
+int j=0,p=0,k,f=0,ct=0;
+String st = new String[c];
+String[] st1;
+int[] fq;
+while(sc.hasNextLine())
+{
+s=sc.nextLine()+" ";
+l=s.length();
+for(i=0;i<l;i++)
+{
+if(s.charAt(i)==' ')
+{
+st[p]=s.substring(j,i);
+j=i+1;
+p=p+1;
+}
+}
+for(i=0;i<c;i++)
+{
+for(k=0;k<c;k++)
+{
+if(st[i].equals(st[k])
+f++;
+}
+fq[ct]=f;
+st1[ct]=st[i];
+for(int a=0;a<st1.length();a++)
+{
+if(
+ct++;
+f=0;
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
+
